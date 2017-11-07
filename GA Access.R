@@ -13,11 +13,7 @@ library(forecast)
 
 # Step Two: Authenticate
 
-token <- Auth("294470013201-qrdobt7mfpffbvpcfsfsap74grr94566.apps.googleusercontent.com", "02fVFZSrSLhZQRv4ZAgVFCvY") # first Client ID, then Client Secret
-
-save(token,file="./token_file") # This will save the token on your computer so you do not need to authenticate everytime
-
-ValidateToken(token) # Checks if the token is valid
+## The token object should come from your setup.R file, in which you add the ClientID and ClientSecret to get your access token
 
 GetProfiles(token) # Check to see which profiles exist on the account
 
