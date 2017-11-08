@@ -15,7 +15,6 @@ library(fpp2)
 ### Get your cliend ID and secret at https://console.developers.google.com/apis/dashboard
 ### Go to Google analytics and authorize the Google Analytics API to send and receive information
 
-<<<<<<< HEAD
 token <- Auth("Your ClientID Here", "Your Client Secret Here") # first Client ID, then Client Secret
 
 save(token,file="./token_file") # This will save the token on your computer so you do not need to authenticate everytime
@@ -25,11 +24,10 @@ ValidateToken(token)
 # Step Two: Authenticate
 
 #### This is done in a setup file usually to protect your ClientID and ClientSecret
-=======
+
 # Step Two: Authenticate
 
 ## The token object should come from your setup.R file, in which you add the ClientID and ClientSecret to get your access token
->>>>>>> c50a0b2e8ae461cce75b30fab2d8c101a2d52c70
 
 GetProfiles(token) # Check to see which profiles exist on the account
 
